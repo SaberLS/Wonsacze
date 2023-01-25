@@ -1,0 +1,166 @@
+:root {
+    --color-parent: #F8C296;
+    --color-color: #E8E8E3;
+    --color-background: #5B2C06;
+    --color-border: #B6590D;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, blockquote {
+    color: var(--color-color);
+}
+
+p, a, blockquote{
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    background-color: var(--color-parent);
+}
+
+/*---------------------- Nav ----------------------*/
+
+nav {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    background-color: var(--color-border);
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    padding: 1.25rem;
+}
+
+/*---------------------- Header ----------------------*/
+
+header {
+    margin-top: 3em;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    font-family: 'Sonsie One', cursive;
+    text-align: center;
+}
+
+h1 {
+    padding: 3rem;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    text-shadow: 1px 2px black;
+}
+
+
+@media screen and (max-width: 820px){
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    h1 {
+        font-size: 2.75rem;
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    h1 {
+        font-size: 2rem;
+        padding: 3rem 0;
+    }
+}
+
+/*---------------------- Main ----------------------*/
+
+main {
+    margin: 10em 0;
+    background-color: var(--color-border);
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-family: 'Sonsie One', cursive;
+    text-shadow: 1px 1px black;
+}
+
+blockquote {
+    max-width: 75ch;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+span {
+    display: inline-block;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    width: 22%;
+    box-shadow: 1px 1px 2px black;
+}
+
+@media screen and (max-width: 820px){
+    main{
+        padding: 2rem 0;
+    }
+
+    h2{
+        margin: 0 2rem;
+        font-size: 1.75rem;
+    }
+
+    blockquote {
+        margin: 2rem
+    }
+
+    .images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    h2 {
+        text-align: center;
+    }
+}
+
+/*---------------------- Footer ----------------------*/
+
+footer {
+    background-color: var(--color-background);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+footer h2 {
+    margin-bottom: 2rem;
+}
+
+footer a {
+    padding: 1rem 2rem;
+    border-radius: 5%;
+    background-color: var(--color-border);
+    border: 1px solid var(--color-parent);
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
